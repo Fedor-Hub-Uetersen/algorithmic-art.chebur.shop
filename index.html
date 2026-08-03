@@ -166,6 +166,20 @@
         .close-btn:hover { background: #e74c3c; color: #fff; }
 
         footer { text-align: center; padding: 30px 20px; color: var(--text-muted); font-size: 0.9rem; border-top: 1px solid var(--border-color); margin-top: 60px; }
+        footer { text-align: center; padding: 30px 20px; color: var(--text-muted); font-size: 0.9rem; border-top: 1px solid var(--border-color); margin-top: 60px; }
+        
+        /* Подсветка ссылки в футере */
+        footer .site-link {
+            color: var(--accent-hover);
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.2s ease, text-shadow 0.2s ease;
+        }
+
+        footer .site-link:hover {
+            color: #ffffff;
+            text-shadow: 0 0 8px var(--accent-hover);
+        }
     </style>
 </head>
 <body oncontextmenu="return false;" ondragstart="return false;">
@@ -303,8 +317,7 @@
         </div>
     </div>
 
-    <footer>&copy; 2026 Проект <span>«Алгоритмический Портретизм»</span>. Все права защищены.</footer>
-
+   <footer>&copy; 2026 Проект <a href="https://algorithmic-art.chebur.shop" class="site-link">«https://algorithmic-art.chebur.shop»</a>. Все права защищены.</footer>
     <script>
         function toggleTheme() {
             const body = document.body;
