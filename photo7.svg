@@ -1,0 +1,60 @@
+<!-- КАРТОЧКА 7: ПАРЯЩАЯ МЕДИТАЦИЯ -->
+            <div class="card" onclick="openModal(this)">
+                <div class="card-img-wrapper">
+                    <svg viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg" style="width: 100%; height: 100%; display: block;">
+                      <defs>
+                        <style>
+                          .levitate { animation: floatAndBreath 5s infinite ease-in-out; transform-origin: 300px 450px; }
+                          @keyframes floatAndBreath {
+                            0%, 100% { transform: translateY(0px) scale(1); }
+                            50% { transform: translateY(-20px) scale(1.02); }
+                          }
+                          .glow { animation: glowPulse 5s infinite ease-in-out; }
+                          @keyframes glowPulse {
+                            0%, 100% { opacity: 0.2; transform: scale(0.9); }
+                            50% { opacity: 0.5; transform: scale(1.1); }
+                          }
+                        </style>
+                        <linearGradient id="bgGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+                          <stop offset="0%" stop-color="#2a3b32" />
+                          <stop offset="100%" stop-color="#121815" />
+                        </linearGradient>
+                        <radialGradient id="levitGlow" cx="50%" cy="50%" r="50%">
+                          <stop offset="0%" stop-color="#73c2fb" stop-opacity="0.6" />
+                          <stop offset="100%" stop-color="#2a3b32" stop-opacity="0" />
+                        </radialGradient>
+                      </defs>
+
+                      <rect width="600" height="600" fill="url(#bgGrad)"/>
+                      <path d="M50 450 Q 300 380 550 450 L 580 600 L 20 600 Z" fill="#d3d9d2" opacity="0.15"/>
+                      
+                      <path d="M120 320 Q 90 250 60 200 Q 110 220 150 180 Q 100 150 70 120 Q 130 130 180 160 Q 200 100 250 120 Q 220 180 180 230 Q 230 250 200 320 Z" fill="#354f3b"/>
+                      <path d="M130 320 Q 140 250 120 200" stroke="#5c4033" stroke-width="8" fill="none" stroke-linecap="round"/>
+
+                      <g transform="translate(430, 280)">
+                        <rect x="0" y="50" width="80" height="30" rx="5" fill="#8c7853"/>
+                        <path d="M 20 50 Q 40 10 60 50 Z" fill="#d4af37"/>
+                        <circle cx="40" cy="18" r="10" fill="#d4af37"/>
+                      </g>
+
+                      <ellipse class="glow" cx="300" cy="530" rx="70" ry="15" fill="url(#levitGlow)"/>
+
+                      <g class="levitate">
+                        <ellipse cx="300" cy="510" rx="90" ry="25" fill="#1b2621"/>
+                        <path d="M 250 430 Q 300 400 350 430 L 370 510 Q 350 530 300 530 Q 250 530 230 510 Z" fill="#2d4a3e"/>
+                        <ellipse cx="300" cy="480" rx="25" ry="10" fill="#e8beac"/>
+                        <circle cx="300" cy="375" r="22" fill="#e8beac"/>
+                        <rect x="288" y="367" width="10" height="6" rx="2" fill="none" stroke="#111" stroke-width="2"/>
+                        <rect x="302" y="367" width="10" height="6" rx="2" fill="none" stroke="#111" stroke-width="2"/>
+                        <line x1="298" y1="370" x2="302" y2="370" stroke="#111" stroke-width="2"/>
+                      </g>
+                    </svg>
+                </div>
+                <div class="card-content">
+                    <div>
+                        <span class="card-tag" data-ru="Работа №7" data-en="Work №7">Работа №7</span>
+                        <h2 class="card-title">Levitation & Meditation</h2>
+                        <p class="card-desc" data-ru="Алгоритмический портрет: состояние невесомости, гармония и медитация." data-en="Algorithmic portrait: state of weightlessness, harmony and meditation.">Алгоритмический портрет: состояние невесомости, гармония и медитация.</p>
+                    </div>
+                </div>
+            </div>
